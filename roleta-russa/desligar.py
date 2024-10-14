@@ -8,7 +8,8 @@ tiro = int(input("Escolha un numero de 1 a 10:"))
 
 while True:
     if tiro == num:
-        os.system("shutdown /s /t 1")
+        os.system("shutdown /s /t 1") #desligar
+        #os.system("shutdown /r /t 1") #reiniciar
     else:
         print("Está vivo!")
 
