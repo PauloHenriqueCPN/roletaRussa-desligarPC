@@ -10,11 +10,12 @@ def jogar():
         if tiro < 1 or tiro > 5:
             messagebox.showwarning("Atenção", "Escolha um número entre 1 e 5.")
             resultado.set("Não brinque com coisa séria")
-            os.system("shutdown /s /t 1")
-            os.system("shutdown /r /t 1")
+            os.system("shutdown /s /t 1") # desligar
+            #os.system("shutdown /r /t 1") # reiniciar
         elif tiro == num:
             resultado.set("Perdeu!")
             os.system("shutdown /s /t 1")
+            os.system("shutdown /r /t 1")
             #messagebox.showinfo("Resultado", "Você perdeu!")
         else:
             resultado.set("Está vivo!")
